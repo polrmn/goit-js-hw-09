@@ -16,3 +16,44 @@ img {
   display: block;
   max-width: 100%;
 }
+
+/* 02-timer */
+input#datetime-picker {
+  margin: 20px;
+  width: 200px;
+  height: 30px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+button[data-start] {
+  width: 50px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.timer {
+  width: 400px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  border: 5px solid grey;
+}
+
+span {
+  display: block;
+}
+
+.value {
+  font-size: 40px;
+}
+
+.endtime {
+  padding: 20px;
+  font-size: 30px;
+  font-style: italic;
+  color: #00ff00;
+}
+
+
+
