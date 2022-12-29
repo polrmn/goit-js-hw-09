@@ -33,6 +33,11 @@ flatpickr('#datetime-picker', {
 refs.startBtn.addEventListener('click', onSratrBtnClick);
 
 function onSratrBtnClick(event) {
+    refs.p = document.querySelector('.endtime');
+    console.log(refs.p);
+    if (refs.p) {
+      refs.p.innerHTML = '';
+    }
     refs.input.disabled = true;
     refs.startBtn.disabled = true;
     refs.timerDiv.style.borderColor = 'yellow';
@@ -45,11 +50,19 @@ function onSratrBtnClick(event) {
         refs.valueSpans[3].innerHTML = addLeadingZero(`${date.seconds}`);
         if (ms < 1000) {
             clearInterval(timerId);
+            refs.input.disabled = false;
+            refs.startBtn.disabled = false;
             refs.timerDiv.style.borderColor = '#00ff00';
-            refs.timerDiv.insertAdjacentHTML(
-              'afterend',
-              `<p class="endtime">TIME IS UP!</p>`
-            );
+            // refs.p.innerHTML = '<p class="endtime">TIME IS UP!</p>';
+            if (refs.p) {
+              refs.p.innerHTML = '<p class="endtime">TIME IS UP!</p>';
+            } else {
+              refs.timerDiv.insertAdjacentHTML(
+                'afterend',
+                `<p class="endtime">TIME IS UP!</p>`
+              );
+            }
+            
         }
     }, 1000);
 
