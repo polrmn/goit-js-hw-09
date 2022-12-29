@@ -34,7 +34,6 @@ refs.startBtn.addEventListener('click', onSratrBtnClick);
 
 function onSratrBtnClick(event) {
     refs.p = document.querySelector('.endtime');
-    console.log(refs.p);
     if (refs.p) {
       refs.p.innerHTML = '';
     }
