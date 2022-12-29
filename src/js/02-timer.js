@@ -53,9 +53,8 @@ function onSratrBtnClick(event) {
             refs.input.disabled = false;
             refs.startBtn.disabled = false;
             refs.timerDiv.style.borderColor = '#00ff00';
-            // refs.p.innerHTML = '<p class="endtime">TIME IS UP!</p>';
             if (refs.p) {
-              refs.p.innerHTML = '<p class="endtime">TIME IS UP!</p>';
+              refs.p.innerHTML = 'TIME IS UP!';
             } else {
               refs.timerDiv.insertAdjacentHTML(
                 'afterend',
