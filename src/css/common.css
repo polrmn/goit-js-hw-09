@@ -33,11 +33,11 @@ button[data-start] {
 }
 
 .timer {
-  width: 400px;
+  width: 320px;
   padding: 20px;
   display: flex;
   justify-content: space-around;
-  border: 5px solid grey;
+  border: 5px solid transparent;
 }
 
 span {
@@ -45,7 +45,11 @@ span {
 }
 
 .value {
-  font-size: 40px;
+  font-size: 30px;
+}
+
+.label {
+  text-transform: uppercase;
 }
 
 .endtime {
