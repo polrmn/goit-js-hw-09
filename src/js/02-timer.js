@@ -50,7 +50,6 @@ function onSratrBtnClick(event) {
         if (ms < 1000) {
             clearInterval(timerId);
             refs.input.disabled = false;
-            refs.startBtn.disabled = false;
             refs.timerDiv.style.borderColor = '#00ff00';
             if (refs.p) {
               refs.p.innerHTML = 'TIME IS UP!';
